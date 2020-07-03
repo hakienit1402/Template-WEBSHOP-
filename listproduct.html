@@ -1,0 +1,828 @@
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src=source/jquery-3.4.1.min.js>
+    </script>
+    <script src="source/popper.min.js"></script>
+    <script src="source/tooltip.min.js"></script>
+    <link rel="stylesheet" href="source/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="source/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <script src="source/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="source/Font Awesome v5.9.0 Pro - Web/css/all.min.css">
+    <script src="source/Font Awesome v5.9.0 Pro - Web/js/all.min.js"></script>
+    <link rel="stylesheet" href="source/jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="source/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="source/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="source/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="source/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="source/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="source/tooltip.min.js"></script>
+    <link rel="stylesheet" href="source/EasyZoom/css/easyzoom.css">
+    <link rel="stylesheet" href="source/bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.css">
+    <script src="source/bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href=" css/productgrid.css ">
+
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-custom  ">
+            <div class="container">
+                <a class="navbar-brand text-center" href="index.html"><img class="img-fluid" src="img/other/android-logo.png" style="width: 60px;height: 60px; " alt="logo"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                <div class="navbar-collapse collapse " id="navbarsExample04">
+                    <ul class="navbar-nav mr-auto pl-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-hover" href="#" id="dropdown04" data-toggle="dropdown">Sản
+                                        phẩm</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item all-phone" href="listproduct.html">Tất cả</a>
+                                <a class="dropdown-item samsung" href="listproduct.html">SamSung</a>
+                                <a class="dropdown-item realmi" href="listproduct.html">Realmi</a>
+                                <a class="dropdown-item xiaomi" href="listproduct.html">Xiaomi</a>
+                                <a class="dropdown-item oppo" href="listproduct.html">Oppo</a>
+                                <a class="dropdown-item huawei" href="listproduct.html">Huawei</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Liên hệ</a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-md-0">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <button class="btn btn btn-primary btn-outline-light " type="submit"><i
+                                        class="fas fa-search"></i>
+                                </button>
+                    </form>
+                    <div class="col-md-2 right-align">
+                        <button role="button" type="button" class="btn btn-primary btn-outline-light float-md-right my-3 mx-1" data-toggle="dropdown" id="account_button">
+                                    <i class="fas fa-user-circle"></i>
+                                </button>
+                        <div class="dropdown-menu my-auto">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModel">Đăng
+                                        nhập</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#createAccountModel">Đăng
+                                        ký</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#forgetPass">Quên mật
+                                        khẩu</a>
+                            <a class="dropdown-item" href="userinfo.html">Tài khoản của tôi</a>
+                            <a class="dropdown-item" href="listorder.html">Đơn hàng của tôi</a>
+                        </div>
+                        <button class="btn btn-primary btn-outline-light my-3 mx-1 float-md-right" type="button"><a
+                                        href="giohang.html"><i class="fas fa-shopping-cart"></i></a><i class="badge badge-warning">0</i>
+                                </button>
+                    </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="signInModel" tabindex="-1" role="dialog" aria-labelledby="signInModelTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title ml-3" id="signInModelTitle">Đăng Nhập</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <p class="mt-1 mb-1">Tài Khoản:</p>
+                                    <input type="text" id="inputUser_signIn" class="mb-3 form-control" placeholder="Tài Khoản" required="" autofocus="true">
+                                    <p class="mt-3 mb-1">Mật Khẩu:</p>
+                                    <input type="password" id="inputPassword_signIn" class="mb-3 form-control" placeholder="Mật Khẩu" required="">
+                                    <button class="my-3 mt-2 btn btn-lg btn-primary btn-block col-sm-12 rounded-lg" type="submit">Đăng Nhập
+                                            </button>
+
+                                    <div class="row ml-4">
+                                        <ul class="list-group list-group-horizontal">
+                                            <li class="list-group-item border-0"><a href="#" data-toggle="modal" data-target="#forgetPass" data-dismiss="modal" aria-label="Close">Quên Mật Khẩu?</a></li>
+                                            <li class="list-group-item border-0"><a href="#" data-toggle="modal" data-target="#createAccountModel" data-dismiss="modal" aria-label="Close">Tạo Tài Khoản?</a></li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="createAccountModel" tabindex="-1" role="dialog" aria-labelledby="createAccountModelTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title ml-3" id="createAccountModelTitle">Tạo Tài Khoản</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <p class="mt-1 mb-1">Tài Khoản:</p>
+                                    <input type="text" id="inputUser_createAccount" class="mb-3 form-control" placeholder="Tài Khoản" required="" autofocus="true">
+
+                                    <p class="mt-3 mb-1">Mật Khẩu:</p>
+                                    <input type="password" id="inputPassword_createAccount" class="mb-3 form-control" placeholder="Mật Khẩu" required="">
+
+                                    <p class="mt-3 mb-1">Nhập Lại Mật Khẩu:</p>
+                                    <input type="password" id="inputConfirmPassword_createAccount" class="mb-3 form-control" placeholder="Nhập Lại Mật Khẩu" required="">
+
+                                    <button class="my-4 btn btn-lg btn-primary btn-block col-sm-12 rounded-lg" type="submit">Đăng Ký
+                                            </button>
+
+                                    <div class="row align-items-center">
+                                        <a class=" col-xl-4 mx-auto" data-toggle="modal" data-target="#signInModel" data-dismiss="modal" aria-label="Close" href="#"> <i class="fas fa-arrow-left"></i> Trở Lại</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog" aria-labelledby="forgetPassTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title ml-3" id="forgetPassTitle">Quên Mật Khẩu</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <p class="mt-3 mb-1">Tài Khoản</p>
+                                    <input type="text" id="inputUser" class="mb-3 form-control" placeholder="Tài Khoản" required="" autofocus="true">
+
+                                    <p class="mt-3 mb-1"> Nhập Captcha</p>
+                                    <input type="text" id="inputPassword" class="mb-3 form-control" placeholder="Nhập Captcha" required="">
+                                    <div class="row mx-0">
+                                        <img src="http://placehold.it/200x50" class="" alt="capcha image">
+                                        <button class="my-3 mx-3"><i class="fas fa-sync-alt my-auto"></i></button>
+                                    </div>
+
+                                    <button class="my-3 btn btn-lg btn-primary btn-block float-left col-sm-12 rounded-lg" type="submit">Lấy Lại Mật Khẩu
+                                            </button>
+                                    <div class="row align-items-center">
+                                        <a class=" col-xl-4 mx-auto" data-toggle="modal" data-target="#signInModel" data-dismiss="modal" aria-label="Close" href="#"> <i class="fas fa-arrow-left"></i> Trở Lại</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="section-product" class="section-product pt-2 setminheight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-left list-express">
+                    <div class="card text-center mt-4 border-0 pt-5">
+                        <article class="card-group-item category mt-5">
+                            <header class="card-header">
+                                <h5 class="title">Giá </h5>
+                            </header>
+                            <div class="filter-content">
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item">Dưới 1 triệu
+                                    </a>
+                                    <a href="#" class="list-group-item">Từ 1 - 3 triệu
+                                    </a>
+                                    <a href="#" class="list-group-item">Từ 3 - 6 triệu
+                                    </a>
+                                    <a href="#" class="list-group-item">Từ 6 - 10 triệu
+                                    </a>
+                                    <a href="#" class="list-group-item">Từ 10 - 15 triệu
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-9 main-product ">
+                    <div class="product-select mt-4">
+                        <label for="select-price">
+                            <p class="maintitle float-left">Điện thoại:</p>
+                        </label>
+                        <select class="form-control w-50 float-right " id="select-price">
+                            <option>Nổi bật</option>
+                            <option>Giá từ thấp nhất đến cao nhất</option>
+                            <option>Giá từ cao nhất đến cao nhất</option>
+                        </select>
+                    </div>
+
+                    <div class="contain list-product pt-4">
+                        <div class="row mt-2">
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 border-dark zoom">
+                                <div class="product-grid4">
+                                    <div class="product-image4">
+                                        <a href="productinfo.html">
+                                            <img class="pic-1 img-fluid" src="img/sanpham/huawei/nova3i/1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View" data-toggle="modal" data-target="#productmodal"><i class="fa fa-eye mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i
+                                                        class="fa fa-shopping-bag mt-2"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i
+                                                        class="fa fa-shopping-cart mt-2"></i></a></li>
+                                        </ul>
+                                        <span class="product-status-label">New</span>
+                                        <span class="product-discount-label bg-warning">-10%</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">NOVA3I</a></h3>
+                                        <div class="price">
+                                            $14.40
+                                        </div>
+                                        <a class="add-to-cart" href="">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="productmodal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-full">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p>THÔNG TIN SẢN PHẨM</p>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col col-md-7">
+                                                        <div class="easyzoom easyzoom--adjacent easyzoom--with-thumbnails">
+                                                            <a href="img/sanpham/huawei/nova3i/1.jpg">
+                                                                <img src="img/sanpham/huawei/nova3i/1.jpg" style="width: 550px; height: 550px" />
+                                                            </a>
+                                                        </div>
+                                                        <ul class="thumbnails row float-left pt-3 pl-2 no-gutters">
+                                                            <li class="col-md-3">
+                                                                <a class="mx-2 img-fluid" href="img/sanpham/huawei/nova3i/1.jpg " data-standard="img/sanpham/huawei/nova3i/1.jpg ">
+                                                                    <img class="img-fluid" src="img/sanpham/huawei/nova3i/1.jpg " alt=" " />
+                                                                </a>
+                                                            </li>
+                                                            <li class="col-md-3">
+                                                                <a class="mx-2 img-fluid" href="img/sanpham/huawei/nova3i/2.jpg " data-standard="img/sanpham/huawei/nova3i/2.jpg ">
+                                                                    <img class="img-fluid" src="img/sanpham/huawei/nova3i/2.jpg " alt=" " />
+                                                                </a>
+                                                            </li>
+                                                            <li class="col-md-3">
+                                                                <a class="mx-2 img-fluid" href="img/sanpham/huawei/nova3i/3.jpg " data-standard="img/sanpham/huawei/nova3i/3.jpg ">
+                                                                    <img class="img-fluid" src="img/sanpham/huawei/nova3i/3.jpg " alt=" " />
+                                                                </a>
+                                                            </li>
+                                                            <li class="col-md-3">
+                                                                <a class="mx-2 img-fluid" href="img/sanpham/huawei/nova3i/4.jpg " data-standard="img/sanpham/huawei/nova3i/4.jpg ">
+                                                                    <img class="img-fluid" src="img/sanpham/huawei/nova3i/4.jpg " alt=" " />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-md-4 info-detail ml-5">
+                                                        <h4 class="name-product">Điện Thoại OPPO A3s </h4>
+                                                        <h6 class="brand-product">Thương hiệu: <a href="#">OPPO</a></h6>
+                                                        <p class="real-price">Giá: <span class="span-real-price ">3.999.000 đ</span></p>
+                                                        <p class="percent-price">Tiết kiệm: <span class="span-percent-price btn btn-warning">15%</span>
+                                                        </p>
+                                                        <p class="fake-price">Giá chưa giảm :
+                                                            <del class="span-fake-price">6.900.000 đ</del>
+                                                        </p>
+                                                        <ul class="more-information p-3">
+                                                            <li>Camera Trước: 8 MP (Hỗ trợ công nghệ A.I)</li>
+                                                            <li>Camera Sau: 13 MP + 2 MP (Camera kép)</li>
+                                                            <li>Bộ Nhớ: 32GB</li>
+                                                            <li>RAM: 3GB</li>
+                                                            <li>Màn hình: 6.2 inch (Màn hình siêu tràn), HD+</li>
+                                                            <li>Màu sắc : <i class="fas fa-circle red"></i></li>
+                                                        </ul>
+
+                                                        <div class="border-dark mb-3 ml-3" style="width:33%">
+                                                            <span class="quanity">Số lượng:</span>
+                                                            <input class="text-center" id="demo3" type="text" value="1" name="demo3">
+
+                                                        </div>
+                                                        <div class="row mb-4 ml-1">
+                                                            <div class="float-left btn">
+                                                                <a href="#" class="btn btn-outline-light p-3 "><i
+                                                                        class="fas fa-cart-plus "></i> Đặt
+                                                                    hàng</a>
+                                                            </div>
+                                                            <div class="float-left btn">
+                                                                <a href="#" class="btn btn-outline-light p-3"><i
+                                                                        class="fas fa-heart"></i> Yêu Thích</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <ul class="pagination mt-5 justify-content-md-center">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer" id="footer_page">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-3 contact mt-4">
+                    <div class="title-footer border-bottom">
+                        <span class="footpage_headtitle">DHP MOBILE</span>
+                    </div>
+                    <div class="mt-4">
+                        <p><i class="fas fa-map-marker-alt"></i> Trụ sở chính: KP6, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh, Việt Nam</p>
+                        <p><i class="fas fa-phone"></i> 0964494830</p>
+                        <p><i class="fas fa-mailbox"></i> 17130071@st.hcmuaf.edu.vn</p>
+                        <p><i class="fas fa-globe"></i> DHP.com</p>
+                    </div>
+
+                </div>
+                <div class="col col-md-3 about-us mt-4">
+                    <div class="title-footer border-bottom">
+                        <span class="footpage_headtitle">OTHER</span>
+                    </div>
+                    <div class="mt-4 footpage_link">
+                        <p><a href="#">ABOUT US</a></p>
+                        <p><a href="#">FAQ</a></p>
+                        <p><a href="#">BÁO LỖI</a></p>
+                    </div>
+
+                </div>
+                <div class="col col-md-3 our-team mt-4">
+                    <div>
+                        <div class="title-footer border-bottom">
+                            <span class="footpage_headtitle">OUR TEAM</span>
+                        </div>
+                        <div class="mt-4 footpage_link">
+                            <p><a href="#">MINH HIẾU</a></p>
+                            <p><a href="#">MINH ĐÌNH</a></p>
+                            <p><a href="#">HƯNG PHÁT</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3 about-us mt-4">
+                    <div class="title-footer border-bottom">
+                        <span class="footpage_headtitle">Follow Us</span>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#"><img src="img/foot_icon/facebook.png" alt="Facebook" width="48" style="text-decoration: none; width: 48px;"></a>
+                        <a href="#"><img src="img/foot_icon/twitter.png" alt="Twitter" width="48" style="text-decoration: none; width: 48px;"></a>
+                        <a href="#"><img src="img/foot_icon/instagram.png" alt="Instagram" width="48" style="text-decoration: none; width: 48px;"></a>
+                        <a href="#"><img src="img/foot_icon/youtube.png" alt="YouTube" width="48" style="text-decoration: none; width: 48px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bt-footer">
+            <div class="row pb-1 mx-auto col-md-12">
+                <div class="col-md-4">
+
+                </div>
+                <div class="bottom-footer pt-3">
+                    <p>© 2019 Copyright by <span>DHP</span> – A Team IT in HCM City . All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./source/EasyZoom/dist/easyzoom.js "></script>
+    <script>
+        var $easyzoom = $('.easyzoom').easyZoom();
+        var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+        $('.thumbnails').on('click', 'a', function(e) {
+            var $this = $(this);
+            e.preventDefault();
+            api1.swap($this.data('standard'), $this.attr('href'));
+        });
+        var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+        $('.toggle').on('click', function() {
+            var $this = $(this);
+            if ($this.data("active ") === true) {
+                $this.text("Switch on ").data("active ", false);
+                api2.teardown();
+            } else {
+                $this.text("Switch off ").data("active ", true);
+                api2._init();
+            }
+        });
+        $("input[name='demo3' ] ").TouchSpin({
+            buttondown_class: "btn border ",
+            buttonup_class: "btn border  ",
+            min: 1,
+            max: 100,
+        });
+    </script>
+</body>
+
+</html>

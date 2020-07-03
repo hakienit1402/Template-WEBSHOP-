@@ -1,0 +1,437 @@
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src=source/jquery-3.4.1.min.js>
+    </script>
+    <script src="source/popper.min.js"></script>
+    <script src="source/tooltip.min.js"></script>
+    <link rel="stylesheet" href="source/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="source/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <script src="source/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="source/Font Awesome v5.9.0 Pro - Web/css/all.min.css">
+    <script src="source/Font Awesome v5.9.0 Pro - Web/js/all.min.js"></script>
+    <link rel="stylesheet" href="source/jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="source/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="source/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="source/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="source/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="source/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="source/tooltip.min.js"></script>
+    <link rel="stylesheet" href="source/EasyZoom/css/easyzoom.css">
+    <link rel="stylesheet" href="source/bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.css">
+    <script src="source/bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            font-size: 15px;
+        }
+        
+        .contact {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-custom  ">
+            <div class="container">
+                <a class="navbar-brand text-center" href="index.html"><img class="img-fluid" src="img/other/android-logo.png" style="width: 60px;height: 60px; " alt="logo"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                <div class="navbar-collapse collapse " id="navbarsExample04">
+                    <ul class="navbar-nav mr-auto pl-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-hover" href="#" id="dropdown04" data-toggle="dropdown">Sản
+                                        phẩm</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item all-phone" href="listproduct.html">Tất cả</a>
+                                <a class="dropdown-item samsung" href="listproduct.html">SamSung</a>
+                                <a class="dropdown-item realmi" href="listproduct.html">Realmi</a>
+                                <a class="dropdown-item xiaomi" href="listproduct.html">Xiaomi</a>
+                                <a class="dropdown-item oppo" href="listproduct.html">Oppo</a>
+                                <a class="dropdown-item huawei" href="listproduct.html">Huawei</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Liên hệ</a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-md-0">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <button class="btn btn btn-primary btn-outline-light " type="submit"><i
+                                        class="fas fa-search"></i>
+                                </button>
+                    </form>
+                    <div class="col-md-2 right-align">
+                        <button role="button" type="button" class="btn btn-primary btn-outline-light float-md-right my-3 mx-1" data-toggle="dropdown" id="account_button">
+                                    <i class="fas fa-user-circle"></i>
+                                </button>
+                        <div class="dropdown-menu my-auto">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModel">Đăng
+                                        nhập</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#createAccountModel">Đăng
+                                        ký</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#forgetPass">Quên mật
+                                        khẩu</a>
+                            <a class="dropdown-item" href="userinfo.html">Tài khoản của tôi</a>
+                            <a class="dropdown-item" href="listorder.html">Đơn hàng của tôi</a>
+                        </div>
+                        <button class="btn btn-primary btn-outline-light my-3 mx-1 float-md-right" type="button"><a
+                                        href="giohang.html"><i class="fas fa-shopping-cart"></i></a><i class="badge badge-warning">0</i>
+                                </button>
+                    </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="signInModel" tabindex="-1" role="dialog" aria-labelledby="signInModelTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title ml-3" id="signInModelTitle">Đăng Nhập</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <p class="mt-1 mb-1">Tài Khoản:</p>
+                                    <input type="text" id="inputUser_signIn" class="mb-3 form-control" placeholder="Tài Khoản" required="" autofocus="true">
+                                    <p class="mt-3 mb-1">Mật Khẩu:</p>
+                                    <input type="password" id="inputPassword_signIn" class="mb-3 form-control" placeholder="Mật Khẩu" required="">
+                                    <button class="my-3 mt-2 btn btn-lg btn-primary btn-block col-sm-12 rounded-lg" type="submit">Đăng Nhập
+                                            </button>
+
+                                    <div class="row ml-4">
+                                        <ul class="list-group list-group-horizontal">
+                                            <li class="list-group-item border-0"><a href="#" data-toggle="modal" data-target="#forgetPass" data-dismiss="modal" aria-label="Close">Quên Mật Khẩu?</a></li>
+                                            <li class="list-group-item border-0"><a href="#" data-toggle="modal" data-target="#createAccountModel" data-dismiss="modal" aria-label="Close">Tạo Tài Khoản?</a></li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="createAccountModel" tabindex="-1" role="dialog" aria-labelledby="createAccountModelTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title ml-3" id="createAccountModelTitle">Tạo Tài Khoản</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <p class="mt-1 mb-1">Tài Khoản:</p>
+                                    <input type="text" id="inputUser_createAccount" class="mb-3 form-control" placeholder="Tài Khoản" required="" autofocus="true">
+
+                                    <p class="mt-3 mb-1">Mật Khẩu:</p>
+                                    <input type="password" id="inputPassword_createAccount" class="mb-3 form-control" placeholder="Mật Khẩu" required="">
+
+                                    <p class="mt-3 mb-1">Nhập Lại Mật Khẩu:</p>
+                                    <input type="password" id="inputConfirmPassword_createAccount" class="mb-3 form-control" placeholder="Nhập Lại Mật Khẩu" required="">
+
+                                    <button class="my-4 btn btn-lg btn-primary btn-block col-sm-12 rounded-lg" type="submit">Đăng Ký
+                                            </button>
+
+                                    <div class="row align-items-center">
+                                        <a class=" col-xl-4 mx-auto" data-toggle="modal" data-target="#signInModel" data-dismiss="modal" aria-label="Close" href="#"> <i class="fas fa-arrow-left"></i> Trở Lại</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog" aria-labelledby="forgetPassTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title ml-3" id="forgetPassTitle">Quên Mật Khẩu</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <p class="mt-3 mb-1">Tài Khoản</p>
+                                    <input type="text" id="inputUser" class="mb-3 form-control" placeholder="Tài Khoản" required="" autofocus="true">
+
+                                    <p class="mt-3 mb-1"> Nhập Captcha</p>
+                                    <input type="text" id="inputPassword" class="mb-3 form-control" placeholder="Nhập Captcha" required="">
+                                    <div class="row mx-0">
+                                        <img src="http://placehold.it/200x50" class="" alt="capcha image">
+                                        <button class="my-3 mx-3"><i class="fas fa-sync-alt my-auto"></i></button>
+                                    </div>
+
+                                    <button class="my-3 btn btn-lg btn-primary btn-block float-left col-sm-12 rounded-lg" type="submit">Lấy Lại Mật Khẩu
+                                            </button>
+                                    <div class="row align-items-center">
+                                        <a class=" col-xl-4 mx-auto" data-toggle="modal" data-target="#signInModel" data-dismiss="modal" aria-label="Close" href="#"> <i class="fas fa-arrow-left"></i> Trở Lại</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-white py-3">
+        <div class=" container ">
+            <div class="row ">
+                <div class="col-md-2 "></div>
+                <div class="col-md-8 ">
+                    <div class="progress " style="height: 30px ">
+                        <div class="progress-bar bg-white " style="width: 33% ">
+                            <h5 class="text-dark font-weight-bold ">Tiến hành đặt hàng</h5>
+                        </div>
+                        <div class="progress-bar bg-white " style="width: 34% ">
+                            <h5 class="text-dark font-weight-bold ">Địa chỉ giao hàng</h5>
+                        </div>
+                        <div class="progress-bar bg-white " style="width: 33% ">
+                            <h5 class="text-dark font-weight-bold ">Thanh toán và đặt mua</h5>
+                        </div>
+                    </div>
+                    <div class="progress ">
+                        <div class="progress-bar bg-success " style="width:33% ">
+                            1
+                        </div>
+                        <div class="progress-bar bg-success " style="width:34% ">
+                            2
+                        </div>
+                        <div class="progress-bar bg-secondary " style="width:33% ">
+                            3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 "></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-2 setminheight " style="min-height: 800px;">
+        <div class="container ">
+            <div class="col-lg-12 col-md-12 ">
+                <h5>2. Địa chỉ giao hàng</h5>
+            </div>
+            <div class="col-md-8 mx-auto mt-4 ">
+                <form>
+                    <div class="row ">
+                        <div class="input-group mb-1 ">
+                            <div class="input-group-prepend p-0 col-md-3 ">
+                                <span class="input-group-text col-md-12 ">Họ tên*:</span>
+                            </div>
+                            <input type="text " class="form-control " placeholder="Username ">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-group mb-1 ">
+                            <div class="input-group-prepend p-0 col-md-3 ">
+                                <span class="input-group-text col-md-12 ">Số điện thoại*:</span>
+                            </div>
+                            <input type="text " class="form-control " placeholder="Nhập số điện thoại ">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-group mb-1 ">
+                            <div class="input-group-prepend p-0 col-md-3 ">
+                                <span class="input-group-text col-md-12 ">Tỉnh/Thành phố:</span>
+                            </div>
+                            <select name="region_id " class="p-1 form-control address " id="region_id " data-bv-field="region_id ">
+                            <option value=" ">Chọn Tỉnh/Thành phố</option>
+                            <option value="294 ">Hồ Chí Minh</option>
+                            <option value="297 ">Hà Nội</option>
+                            <option value="291 ">Đà Nẵng</option>
+                            <option value="278 ">An Giang</option>
+                            <option value="280 ">Bà Rịa - Vũng Tàu</option>
+                            <option value="282 ">Bắc Giang</option>
+                            <option value="281 ">Bắc Kạn</option>
+                            <option value="279 ">Bạc Liêu</option>
+                            <option value="283 ">Bắc Ninh</option>
+                            <option value="284 ">Bến Tre</option>
+                            <option value="285 ">Bình Dương</option>
+                            <option value="286 ">Bình Phước</option>
+                            <option value="287 ">Bình Thuận</option>
+                            <option value="316 ">Bình Định</option>
+                            <option value="289 ">Cà Mau</option>
+                            <option value="290 ">Cần Thơ</option>
+                            <option value="288 ">Cao Bằng</option>
+                            <option value="293 ">Gia Lai</option>
+                            <option value="295 ">Hà Giang</option>
+                            <option value="296 ">Hà Nam</option>
+                            <option value="299 ">Hà Tĩnh</option>
+                            <option value="300 ">Hải Dương</option>
+                            <option value="301 ">Hải Phòng</option>
+                            <option value="319 ">Hậu Giang</option>
+                            <option value="302 ">Hoà Bình</option>
+                            <option value="320 ">Hưng Yên</option>
+                            <option value="321 ">Khánh Hòa</option>
+                            <option value="322 ">Kiên Giang</option>
+                            <option value="323 ">Kon Tum</option>
+                            <option value="304 ">Lai Châu</option>
+                            <option value="306 ">Lâm Đồng</option>
+                            <option value="305 ">Lạng Sơn</option>
+                            <option value="324 ">Lào Cai</option>
+                            <option value="325 ">Long An</option>
+                            <option value="326 ">Nam Định</option>
+                            <option value="327 ">Nghệ An</option>
+                            <option value="307 ">Ninh Bình</option>
+                            <option value="328 ">Ninh Thuận</option>
+                            <option value="329 ">Phú Thọ</option>
+                            <option value="308 ">Phú Yên</option>
+                            <option value="309 ">Quảng Bình</option>
+                            <option value="310 ">Quảng Nam</option>
+                            <option value="311 ">Quảng Ngãi</option>
+                            <option value="330 ">Quảng Ninh</option>
+                            <option value="312 ">Quảng Trị</option>
+                            <option value="313 ">Sóc Trăng</option>
+                            <option value="331 ">Sơn La</option>
+                            <option value="332 ">Tây Ninh</option>
+                            <option value="333 ">Thái Bình</option>
+                            <option value="334 ">Thái Nguyên</option>
+                            <option value="335 ">Thanh Hóa</option>
+                            <option value="303 ">Thừa Thiên Huế</option>
+                            <option value="336 ">Tiền Giang</option>
+                            <option value="314 ">Trà Vinh</option>
+                            <option value="315 ">Tuyên Quang</option>
+                            <option value="337 ">Vĩnh Long</option>
+                            <option value="338 ">Vĩnh Phúc</option>
+                            <option value="339 ">Yên Bái</option>
+                            <option value="292 ">Đắk Lắk</option>
+                            <option value="340 ">Đắk Nông</option>
+                            <option value="341 ">Điện Biên</option>
+                            <option value="317 ">Đồng Nai</option>
+                            <option value="318 ">Đồng Tháp</option>
+                        </select>
+
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-group mb-1 ">
+                            <div class="input-group-prepend p-0 col-md-3 ">
+                                <span class="input-group-text col-md-12 ">Quận/Huyện:</span>
+                            </div>
+                            <select name="city_id " class="p-1 form-control address " id="city_id ">
+                            <option value=" ">Chọn Quận/Huyện</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-group mb-1 ">
+                            <div class="input-group-prepend p-0 col-md-3 ">
+                                <span class="input-group-text col-md-12 ">Phường/Xã:</span>
+                            </div>
+                            <select name="ward_id " class="p-1 form-control address " id="ward_id ">
+                            <option value=" ">Chọn Phường/Xã</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-group mb-1 ">
+                            <div class="input-group-prepend p-0 col-md-3 ">
+                                <span class="input-group-text col-md-12 ">Địa chỉ/số nhà:</span>
+                            </div>
+                            <textarea name="street " class="form-control address " id="street " placeholder="Ví dụ: 47/16 đường số 10, khu phố 3 "></textarea>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-12 text-center ">
+                <button class="btn btn-primary mt-2 "><a href="step3.html "
+                                                    class="text-decoration-none text-white ">Tiếp tục</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer " id="footer_page ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col col-md-3 contact mt-4 ">
+                    <div class="title-footer border-bottom ">
+                        <span class="footpage_headtitle ">DHP MOBILE</span>
+                    </div>
+                    <div class="mt-4 ">
+                        <p><i class="fas fa-map-marker-alt "></i> Trụ sở chính: KP6, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh, Việt Nam</p>
+                        <p><i class="fas fa-phone "></i> 0964494830</p>
+                        <p><i class="fas fa-mailbox "></i> 17130071@st.hcmuaf.edu.vn</p>
+                        <p><i class="fas fa-globe "></i> DHP.com</p>
+                    </div>
+
+                </div>
+                <div class="col col-md-3 about-us mt-4 ">
+                    <div class="title-footer border-bottom ">
+                        <span class="footpage_headtitle ">OTHER</span>
+                    </div>
+                    <div class="mt-4 footpage_link ">
+                        <p><a href="# ">ABOUT US</a></p>
+                        <p><a href="# ">FAQ</a></p>
+                        <p><a href="# ">BÁO LỖI</a></p>
+                    </div>
+
+                </div>
+                <div class="col col-md-3 our-team mt-4 ">
+                    <div>
+                        <div class="title-footer border-bottom ">
+                            <span class="footpage_headtitle ">OUR TEAM</span>
+                        </div>
+                        <div class="mt-4 footpage_link ">
+                            <p><a href="# ">MINH HIẾU</a></p>
+                            <p><a href="# ">MINH ĐÌNH</a></p>
+                            <p><a href="# ">HƯNG PHÁT</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3 about-us mt-4 ">
+                    <div class="title-footer border-bottom ">
+                        <span class="footpage_headtitle ">Follow Us</span>
+                    </div>
+                    <div class="social-links mt-4 ">
+                        <a href="# "><img src="img/foot_icon/facebook.png " alt="Facebook " width="48 " style="text-decoration: none; width: 48px; "></a>
+                        <a href="# "><img src="img/foot_icon/twitter.png " alt="Twitter " width="48 " style="text-decoration: none; width: 48px; "></a>
+                        <a href="# "><img src="img/foot_icon/instagram.png " alt="Instagram " width="48 " style="text-decoration: none; width: 48px; "></a>
+                        <a href="# "><img src="img/foot_icon/youtube.png " alt="YouTube " width="48 " style="text-decoration: none; width: 48px; "></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bt-footer ">
+            <div class="row pb-1 mx-auto col-md-12 ">
+                <div class="col-md-4 ">
+
+                </div>
+                <div class="bottom-footer pt-3 ">
+                    <p>© 2019 Copyright by <span>DHP</span> – A Team IT in HCM City . All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
